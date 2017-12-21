@@ -3,27 +3,38 @@
   margin: auto;
 
   .centertekst{
+    font-size: 30px;
     position: relative;
     text-align: center;
-    color: green;
+    color: white;
 
+    .opacity-image{
+      position: absolute;
+      width: 100%;
+      height: 240px;
+      background: black;
+      opacity: 0.25;
+
+    }
 
       img{
         margin: auto;
         width: 100%;
         margin-bottom: 2%;
-
-        .billede{
-          width: 100%;
-          height: auto;
-
-          .tekstsat{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-         }
         }
-      }
-   }
+
+      .billede{
+        width: 100%;
+        height: 240px;
+         }
+
+      .tekstsat{
+    /*    background-color: rgba(0,0,0,0.65);*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2%;
+  }
+ }
+}
