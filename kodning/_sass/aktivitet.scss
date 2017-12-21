@@ -1,0 +1,29 @@
+.aktiv{
+  width: 95%;
+  margin: auto;
+
+  .centertekst{
+    position: relative;
+    text-align: center;
+    color: green;
+
+
+      img{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2%;
+
+        .billede{
+          width: 100%;
+          height: auto;
+
+          .tekstsat{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+         }
+        }
+      }
+   }
