@@ -1,6 +1,6 @@
-@import "menu.scss";
-@import "color.scss";
-@import "aktivitet.scss";
+@import "_menu.scss";
+@import "_color.scss";
+@import "_aktivitet.scss";
 
 *{
   box-sizing:border-box;
@@ -26,7 +26,7 @@ body{
   margin-top: 2%;
 
 }
-
+/*hej*/
 footer {
   background-color: $black;
   position: absolute;
