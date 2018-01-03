@@ -1,6 +1,7 @@
 @import "_menu.scss";
 @import "_color.scss";
 @import "_aktivitet.scss";
+@import "_aktiviteter.scss";
 
 *{
   box-sizing:border-box;
@@ -25,6 +26,7 @@ footer {
   position: absolute;
   left: 0 ; right: 0; bottom: 0;
   height: 200px;
+
 
 
   .f_left {
