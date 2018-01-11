@@ -1,0 +1,197 @@
+@import "color.scss";
+
+header {
+  position: relative;
+  background: $black;
+  width: 100%;
+  height: 60px;
+  svg {
+    float: left;
+    position: absolute;
+    width: 50%;
+    top: 2px;
+  }
+}
+/*Stylling for burgermenu-icon*/
+.menuopen {
+  background-color: $red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10.5px;
+  font-weight: thin;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 100;
+}
+/*Styling for side navigation menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $red;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+
+  /*Styling for side navigation menu links*/
+    a {
+      padding: 8px 8px 8px 32px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+      text-transform: uppercase;
+
+      /*This show what side you are on in the nav bar*/
+        .active {
+          font-weight: bold;
+          color: #fff;
+        }
+    }
+}
+
+/*Position and styling for the close button (top right corner)*/
+.sidenav .closebtn {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media screen and (min-width: 685px) {
+
+  header {
+    position: relative;
+    background: $black;
+    width: 100%;
+    height: 120px;
+    svg {
+      position: relative;
+      width: 350px;
+      top: 10%;
+      left: 10px;
+    }
+  }
+  .menuopen {
+    display: none;
+  }
+  /*stylling for menu for desktop*/
+/* Navbar container */
+.navbar {
+  margin-top: -40px;
+  float: right;
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  clear: both;
+  font-family: Arial;
+/* Links inside the navbar */
+  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+/*Putting underline on the side your on*/
+    .active {
+      text-decoration: underline;
+    }
+  }
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+
+/* Dropdown button */
+  .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+  }
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: $red;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $red;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+/* Mega Menu header, if needed */
+  .header {
+    background: $red;
+    padding: 16px;
+    color: white;
+/* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #B4BCA7;
+  height: 180px;
+/* Style links inside the columns */
+  a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+/* Add a background color on hover */
+    .column a:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar input[type=text] {
+    float: right;
+    right: 0;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 17px;
+  }
+}

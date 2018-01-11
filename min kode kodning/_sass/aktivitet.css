@@ -1,0 +1,25 @@
+.aktiv {
+  width: 95%;
+  margin: auto;
+}
+.aktiv .centertekst {
+  position: relative;
+  text-align: center;
+  color: green;
+}
+.aktiv .centertekst img {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.aktiv .centertekst img .billede {
+  width: 100%;
+  height: auto;
+}
+.aktiv .centertekst img .billede .tekstsat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

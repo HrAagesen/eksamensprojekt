@@ -1,0 +1,40 @@
+.aktiviteter{
+  width: 95%;
+  margin: auto;
+  position: relative;
+
+  img{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2%;
+    }
+
+  .billede{
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+     }
+}
+
+
+@media screen and (min-width: 685px) {
+
+  .aktiviteter{
+    width: 90%;
+    max-width: 1010px;
+    margin: auto;
+
+    img{
+      float: right;
+      margin: auto;
+      width: 45%;
+      margin: 2%;
+      }
+
+    .billede{
+      width: 100%;
+      min-width: 100px;
+      height: auto;
+       }
+  }
+}
