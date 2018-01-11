@@ -1,0 +1,22 @@
+@import "color.scss";
+
+.info{
+  margin-left: 8px;
+  margin-right: 8px;
+  border-bottom: 1px solid $black;
+}
+
+.contact{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 20px;
+  border-bottom: 1px solid $black;
+  height: 210px;
+  font-size: 14px;
+  position: relative;
+}
+
+.persons{
+  float: right;
+  position: relative;
+}

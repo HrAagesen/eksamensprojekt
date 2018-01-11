@@ -1,0 +1,106 @@
+/*@media screen and (max-width: 685px) {*/
+@import "_color.scss";
+
+
+.galleri {
+  position: relative;
+
+}
+.imagesline{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  .box {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+
+
+  img{
+    margin-top: 2%;
+    position: relative;
+  /*  float: left;*/
+    width: 100%;
+  }
+  .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     }
+  }
+}
+ /*}*/
+@media screen and (min-width: 685px ){
+
+  .galleri {
+    position: relative;
+
+  }
+  .imagesline{
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    .box {
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 45%;
+      float: left;
+      margin: 2%;
+
+    img{
+      margin: 2%;
+      position: relative;
+      width: 100%;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+    }
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galleri {
+    position: relative;
+
+  }
+  .imagesline{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    .box {
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 30%;
+      float: left;
+      margin: 1%;
+
+    img{
+      margin: 2%;
+      position: relative;
+      width: 100%;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+    }
+  }
+  }
